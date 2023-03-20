@@ -1,5 +1,6 @@
+// js for 3X3 matrix 
 function sum() {
-    event.preventDefault(); 
+    event.preventDefault();
     // Martix 1 input 
     // row 1
     let X11 = document.getElementById("X11").value;
@@ -57,7 +58,7 @@ function sum() {
 
 }
 function sub() {
-    event.preventDefault(); 
+    event.preventDefault();
     // Martix 1 input 
     // row 1
     let X11 = document.getElementById("X11").value;
@@ -115,7 +116,7 @@ function sub() {
 
 }
 function multi() {
-    event.preventDefault(); 
+    event.preventDefault();
     // Martix 1 input 
     // row 1
     let X11 = document.getElementById("X11").value;
@@ -173,7 +174,7 @@ function multi() {
 
 }
 function divi() {
-    event.preventDefault(); 
+    event.preventDefault();
     // Martix 1 input 
     // row 1
     let X11 = document.getElementById("X11").value;
@@ -219,15 +220,15 @@ function divi() {
     let Y33 = document.getElementById("Y33").value;
     Y33 = Number(Y33);
 
-    Z11 =X11 / Y11; 
-    Z12 =X12 / Y12; 
-    Z13 =X13 / Y13; 
-    Z21 =X21 / Y21; 
-    Z22 =X22 / Y22; 
-    Z23 =X23 / Y23; 
-    Z31 =X31 / Y31; 
-    Z32 =X32 / Y32; 
-    Z33 =X33 / Y33; 
+    Z11 = X11 / Y11;
+    Z12 = X12 / Y12;
+    Z13 = X13 / Y13;
+    Z21 = X21 / Y21;
+    Z22 = X22 / Y22;
+    Z23 = X23 / Y23;
+    Z31 = X31 / Y31;
+    Z32 = X32 / Y32;
+    Z33 = X33 / Y33;
 
     document.getElementById("Z11").value = Z11.toFixed(1);
     document.getElementById("Z12").value = Z12.toFixed(1);
@@ -241,7 +242,7 @@ function divi() {
 
 }
 
-function clr(){
+function clr() {
     document.getElementById("X11").value = ""
     document.getElementById("X12").value = ""
     document.getElementById("X13").value = ""

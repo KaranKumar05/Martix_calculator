@@ -3,21 +3,43 @@ body {
 }
 .main_heading {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 25px;
+  height: 45px;
 }
 .main_heading h1 {
     text-align: center;
     color: red;
   border-bottom: 2px solid white;
 }
+.main_heading a{
+  text-decoration: none;
+  background-color: rgb(5, 5, 5);
+  color: white;
+  padding: 10px 20px;
+  margin: 5px;
+  border-radius: 10px;
+  font-weight: bold;
+}
+.main_heading a:hover{
+  background-color: blue;
+  padding: 15px 25px;
+  
+}
+.main_heading .active{
+  background-color: blue;
+  padding: 15px 25px;
+}
 form {
   display: flex;
   column-gap: 2em;
-  /* height: 60vh; */
+  height: 50vh;
   align-items: center;
   justify-content: center;
+}
+.extra_css {
+  height: 60vh;
 }
 form input {
   width: 30px;

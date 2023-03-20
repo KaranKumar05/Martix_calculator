@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Matrix Calculator || Karan Kumar</title>
+    <link rel="stylesheet" href="../css/styles2x2.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
+    />
+  </head>
+  <body>
+    <div class="main_heading">
+      <h1>Matrix Calculator</h1>
+      <div class="more_options">
+        <a href="#" class="active">2 X 2</a>
+        <a href="./3x3.html">3 X 3</a>
+        <a href="./4x4.html">4 X 4</a>
+        <a href="../index.html">Home</a>
+      </div>
+    </div>
+    <form>
+      <div class="first_matrix">
+        <h2>First Matrix</h2>
+        <div class="first_line">
+          <input type="number" id="X11" placeholder="0" />
+          <input type="number" id="X12" placeholder="0" />
+        </div>
+        <div class="second_line">
+          <input type="number" id="X21" placeholder="0" />
+          <input type="number" id="X22" placeholder="0" />
+        </div>
+      </div>
+      <div class="second_matrix">
+        <h2>Second Matrix</h2>
+        <div class="first_line">
+          <input type="number" id="Y11" placeholder="0" />
+          <input type="number" id="Y12" placeholder="0" />
+        </div>
+        <div class="second_line">
+          <input type="number" id="Y21" placeholder="0" />
+          <input type="number" id="Y22" placeholder="0" />
+        </div>
+      </div>
+      <div class="buttons">
+        <h2>Operators</h2>
+        <button onclick="sum()">Add(+)</button>
+        <button onclick="sub()">Subtract(-)</button>
+        <button onclick="multi()">Multiply(*)</button>
+        <button onclick="divi()">Division(/)</button>
+      </div>
+    </form>
+    <div class="answer_container">
+      <h2>Answer</h2>
+      <div class="first_line">
+        <input type="number" id="Z11" />
+        <input type="number" id="Z12" />
+      </div>
+      <div class="second_line">
+        <input type="number" id="Z21" />
+        <input type="number" id="Z22" />
+      </div>
+      <button class="clear_all" onclick="clr()">
+        Clear <i class="bi bi-trash-fill"></i>
+      </button>
+    </div>
+
+    <script src="../js/script2X2.js"></script>
+  </body>
+</html>
