@@ -75,7 +75,7 @@ input[type="number"]::-webkit-outer-spin-button {
   justify-content: center;
   margin-bottom: 20px;
 }
-.answer_container h1{
+.answer_container h2{
     color: white;
 }
 .answer_container input {
@@ -88,4 +88,37 @@ input[type="number"]::-webkit-outer-spin-button {
   border: none;
   border-radius: 10px;
   font-weight: bold;
+}
+.answer_container .clear_all{
+  padding: 5px 30px;
+  margin-top: 20px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  border-radius: 10px;
+  color: white;
+  background-color: red;
+  border: none;
+  cursor: pointer;
+}
+.answer_container .clear_all:hover{
+  background-color: rgb(168, 4, 4);
+}
+@media (max-width:720px) {
+  form{
+    display: flex;
+    flex-direction: column;
+  }
+  .buttons{
+    display: flex;
+  }
+  .buttons h2{
+    text-align: center;
+  }
+  .buttons button{
+    background-color: blue;
+    padding:10px 60px;
+    margin-bottom: 10px;
+  }
+
+  
 }
