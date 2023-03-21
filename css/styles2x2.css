@@ -9,11 +9,11 @@ body {
   height: 45px;
 }
 .main_heading h1 {
-    text-align: center;
-    color: red;
+  text-align: center;
+  color: red;
   border-bottom: 2px solid white;
 }
-.main_heading a{
+.main_heading a {
   text-decoration: none;
   background-color: rgb(5, 5, 5);
   color: white;
@@ -22,31 +22,27 @@ body {
   border-radius: 10px;
   font-weight: bold;
 }
-.main_heading a:hover{
+.main_heading a:hover {
   background-color: blue;
   padding: 15px 25px;
-  
 }
-.main_heading .active{
+.main_heading .active {
   background-color: blue;
   padding: 15px 25px;
 }
 form {
   display: flex;
   column-gap: 2em;
-  height: 50vh;
+  height: 20em;
   align-items: center;
   justify-content: center;
 }
-.extra_css {
-  height: 60vh;
-}
 form input {
-  width: 30px;
+  width: 40px;
   text-align: center;
-  padding: 5px;
+  padding: 8px;
   margin: 5px;
-  font-size: 2em;
+  font-size: 2.5em;
   border: none;
   border-radius: 10px;
   font-weight: bold;
@@ -73,6 +69,7 @@ input[type="number"]::-webkit-outer-spin-button {
 .buttons {
   display: flex;
   flex-direction: column;
+  height: 40vh;
 }
 .buttons button {
   padding: 10px;
@@ -92,13 +89,13 @@ input[type="number"]::-webkit-outer-spin-button {
   display: flex;
   flex-direction: column;
   column-gap: 2em;
-  /* height: 60vh; */
+  height: 50vh;
   align-items: center;
   justify-content: center;
   margin-bottom: 20px;
 }
-.answer_container h2{
-    color: white;
+.answer_container h2 {
+  color: white;
 }
 .answer_container input {
   width: 50px;
@@ -111,7 +108,7 @@ input[type="number"]::-webkit-outer-spin-button {
   border-radius: 10px;
   font-weight: bold;
 }
-.answer_container .clear_all{
+.answer_container .clear_all {
   padding: 5px 30px;
   margin-top: 20px;
   font-size: 1.5rem;
@@ -122,25 +119,41 @@ input[type="number"]::-webkit-outer-spin-button {
   border: none;
   cursor: pointer;
 }
-.answer_container .clear_all:hover{
+.answer_container .clear_all:hover {
   background-color: rgb(168, 4, 4);
 }
-@media (max-width:720px) {
-  form{
+@media (max-width: 720px) {
+  .main_heading h1 {
+    text-align: center;
+    color: red;
+    border-bottom: 1px solid white;
+    font-size: 26px;
+  }
+  .main_heading a {
+    padding: 5px 10px;
+    margin: 3px;
+  }
+  .main_heading a:hover {
+    padding: 7px 15px;
+  }
+  .main_heading .active {
+    background-color: blue;
+    padding: 7px 15px;
+  }
+  form {
     display: flex;
     flex-direction: column;
+    height: 50em;
   }
-  .buttons{
+  .buttons {
     display: flex;
   }
-  .buttons h2{
+  .buttons h2 {
     text-align: center;
   }
-  .buttons button{
+  .buttons button {
     background-color: blue;
-    padding:10px 60px;
+    padding: 10px 60px;
     margin-bottom: 10px;
   }
-
-  
 }

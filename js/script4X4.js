@@ -72,9 +72,11 @@ function sum() {
     let Y42 = document.getElementById("Y42").value;
     Y42 = Number(Y42);
     let Y43 = document.getElementById("Y43").value;
-    Y33 = Number(Y33);
+    Y43 = Number(Y43);
     let Y44 = document.getElementById("Y44").value;
     Y44 = Number(Y44);
+
+    console.log(X11," ",Y11," ",X11+Y11);
 
     document.getElementById("Z11").value = X11 + Y11;
     document.getElementById("Z12").value = X12 + Y12;
